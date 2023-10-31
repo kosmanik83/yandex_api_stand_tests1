@@ -14,7 +14,7 @@ def get_new_track():
     return track
 
 #Выполняю запрос на получения заказа по треку заказа.
-def get_order():
+def get_order(track):
     track = get_new_track()
     params = data.order_params
     params['t'] = track
